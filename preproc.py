@@ -28,10 +28,6 @@ def contour(image):
             cv2.rectangle(thresh_color, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
 
-
-
-    cv2.imwrite("test.jpg", image)
-
     for da in cropdata:
         cv2.imshow("da", da)
         cv2.waitKey(0)
